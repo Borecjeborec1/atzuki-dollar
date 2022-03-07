@@ -1,12 +1,11 @@
-[atzuki_dollar](README.md) / Exports
 
-# atzuki_dollar
+# Atzuki Dollar
+
+Atzuki dollar is personal Javascript library for both, the browser and the server. 
+The main purpose of this library is to provide a simple, easy and fast way to use *day to day* Javascript functions.
 
 ## Table of contents
 
-### Classes
-
-- [AtzukiDollar](classes/AtzukiDollar.md)
 
 ### Functions
 

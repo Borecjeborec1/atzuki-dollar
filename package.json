@@ -8,7 +8,7 @@
     "min": "node ./build/compact.js",
     "dev": "tsc -w",
     "docs": "npx typedoc --out ../docs ./typescript/index.ts",
-    "build": "npm run ts && npm run min && npm run docs"
+    "build": "npm run ts && npm run min && npm run ts && npm run docs"
   },
   "author": "borecjeborec1",
   "license": "MIT",

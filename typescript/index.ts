@@ -1,4 +1,4 @@
-function randomInt(min: number, max: number): number {
+function randInt(min: number, max: number): number {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 /**
@@ -21,7 +21,7 @@ function isEqual(a: number, b: number): boolean {
 }
 
 // default {
-//   randomInt,
+//   randInt,
 // };
 /**
   * Flatten the given array or object.
@@ -103,7 +103,7 @@ class AtzukiDollar {
   private readonly version: string;
 
   // Math Functions
-  public randomInt: Function;
+  public randInt: Function;
   public max: Function;
   public min: Function;
   public isEqual: Function;
@@ -125,7 +125,7 @@ class AtzukiDollar {
     this.version = "1.0.0";
 
     // Math Functions
-    this.randomInt = randomInt;
+    this.randInt = randInt;
     this.max = max;
     this.min = min;
     this.isEqual = isEqual;

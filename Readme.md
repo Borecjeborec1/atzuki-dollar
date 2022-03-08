@@ -14,7 +14,7 @@ The main purpose of this library is to provide a simple, easy and fast way to us
 - [loop](modules.md#markdown-header-loop)
 - [max](modules.md#markdown-header-max)
 - [min](modules.md#markdown-header-min)
-- [randomInt](modules.md#markdown-header-randomint)
+- [randInt](modules.md#markdown-header-randInt)
 - [replaceAll](modules.md#markdown-header-replaceall)
 - [sort](modules.md#markdown-header-sort)
 - [sortByKey](modules.md#markdown-header-sortbykey)
@@ -134,9 +134,9 @@ Get the lesser of values.
 
 ___
 
-### randomInt
+### randInt
 
-▸ **randomInt**(`min`, `max`): `number`
+▸ **randInt**(`min`, `max`): `number`
 
 #### Parameters
 

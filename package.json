@@ -13,9 +13,6 @@
   "author": "borecjeborec1",
   "license": "MIT",
   "devDependencies": {
-    "typedoc": "^0.22.13",
-    "typedoc-bitbucket-theme": "^1.0.0",
-    "typedoc-plugin-markdown": "^3.11.14",
     "typescript": "4.5"
   }
 }

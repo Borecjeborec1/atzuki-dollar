@@ -15,7 +15,8 @@ class AtzukiDollar {
   private readonly version: string;
 
   // Math Functions
-  public randomInt: Function;
+  public randInt: Function;
+  public randBool: Function;
   public max: Function;
   public min: Function;
   public isEqual: Function;
@@ -37,7 +38,8 @@ class AtzukiDollar {
     this.version = "1.0.0";
 
     // Math Functions
-    this.randomInt = math.randomInt;
+    this.randInt = math.randInt;
+    this.randBool = math.randBool;
     this.max = math.max;
     this.min = math.min;
     this.isEqual = math.isEqual;

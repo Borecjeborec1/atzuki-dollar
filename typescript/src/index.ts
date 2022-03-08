@@ -66,5 +66,5 @@ class AtzukiDollar {
 
 if (typeof window === "undefined") {
   // @ts-ignore
-  module.exports = AtzukiDollar;
+  module.exports = new AtzukiDollar();
 }

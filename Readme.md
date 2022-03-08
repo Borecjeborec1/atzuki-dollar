@@ -7,27 +7,27 @@ The main purpose of this library is to provide a simple, easy and fast way to us
 ## Installation
   NPM
 ```bash
-  npm i atzuki_dollar
+npm i atzuki_dollar
 ```
 
   CDN
 ```html
-  <script src="https://cdn.jsdelivr.net/npm/atzuki_dollar/javascript/index.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/atzuki_dollar/javascript/index.min.js"></script>
 ```
 
 
 ## Initialization
 ```javascript
-    const $ = require('atzuki_dollar');
+const $ = require('atzuki_dollar');
 ```
 
 ## Use
 ```javascript
-  $.loop(10, (i) => {
-    console.log(i);
-  });
-  $.flatten([1, 2, 3, [4, 5, 6]]);
-  $.randBool();
+$.loop(10, (i) => {
+  console.log(i);// 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+});
+$.flatten([1, 2, 3, [4, 5, 6]]); // [1, 2, 3, 4, 5, 6]
+$.randBool(); // true
 ```
 
 ## Table of contents

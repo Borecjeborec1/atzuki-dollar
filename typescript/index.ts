@@ -1,6 +1,17 @@
+/**
+ * Generate a random number between min and max
+ */
 function randInt(min: number, max: number): number {
+  if (!max) return Math.floor(Math.random() * min);
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+/**
+ * Get random boolean, true or false
+ */
+function randBool(): boolean {
+  return Math.random() >= 0.5;
+}
+
 /**
   * Get the greater of values.
   */
@@ -20,9 +31,6 @@ function isEqual(a: number, b: number): boolean {
   return a === b;
 }
 
-// default {
-//   randInt,
-// };
 /**
   * Flatten the given array or object.
   */
@@ -104,6 +112,7 @@ class AtzukiDollar {
 
   // Math Functions
   public randInt: Function;
+  public randBool: Function;
   public max: Function;
   public min: Function;
   public isEqual: Function;
@@ -126,6 +135,7 @@ class AtzukiDollar {
 
     // Math Functions
     this.randInt = randInt;
+    this.randBool = randBool;
     this.max = max;
     this.min = min;
     this.isEqual = isEqual;

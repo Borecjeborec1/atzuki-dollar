@@ -4,10 +4,27 @@
 Atzuki dollar is personal Javascript library for both, the browser and the server. 
 The main purpose of this library is to provide a simple, easy and fast way to use *day to day* Javascript functions.
 
+## Installation
+```bash
+  npm i atzuki_dollar
+```
+
+## Initialization
+```javascript
+    const $ = require('atzuki_dollar');
+```
+
+## Use
+````javascript
+  $.loop(10, (i) => {
+    console.log(i);
+  });
+  $.flatten([1, 2, 3, [4, 5, 6]]);
+  $.randBool();
+```
+
 ## Table of contents
 
-
-### Functions
 
 - [flatten](modules.md#markdown-header-flatten)
 - [isEqual](modules.md#markdown-header-isequal)
@@ -20,7 +37,6 @@ The main purpose of this library is to provide a simple, easy and fast way to us
 - [sortByKey](modules.md#markdown-header-sortbykey)
 - [sortByValue](modules.md#markdown-header-sortbyvalue)
 
-## Functions
 
 ### flatten
 

@@ -5,9 +5,16 @@ Atzuki dollar is personal Javascript library for both, the browser and the serve
 The main purpose of this library is to provide a simple, easy and fast way to use *day to day* Javascript functions.
 
 ## Installation
+  NPM
 ```bash
   npm i atzuki_dollar
 ```
+
+  CDN
+```html
+  <script src="https://cdn.jsdelivr.net/npm/atzuki_dollar/javascript/index.min.js"></script>
+```
+
 
 ## Initialization
 ```javascript
@@ -15,7 +22,7 @@ The main purpose of this library is to provide a simple, easy and fast way to us
 ```
 
 ## Use
-````javascript
+```javascript
   $.loop(10, (i) => {
     console.log(i);
   });

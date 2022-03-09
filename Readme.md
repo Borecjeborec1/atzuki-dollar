@@ -15,7 +15,6 @@ npm i atzuki_dollar
 <script src="https://cdn.jsdelivr.net/npm/atzuki_dollar/javascript/index.min.js"></script>
 ```
 
-
 ## Initialization
 ```javascript
 const $ = require('atzuki_dollar');

@@ -13,3 +13,10 @@ export function loop(amount: number = 10, callback: Function): void {
 export function log(...args: any[]): void {
   console.log(...args);
 }
+
+/**
+ * Return type of the given value.
+ */
+export function type(value: any): string {
+  return Object.prototype.toString.call(value).slice(8, -1);
+}

@@ -33,6 +33,7 @@ class AtzukiDollar {
   // Control Functions
   public loop: Function;
   public log: Function;
+  public type: Function;
 
   constructor() {
     // Constants 
@@ -57,6 +58,7 @@ class AtzukiDollar {
     // Control Functions
     this.loop = control.loop;
     this.log = control.log;
+    this.type = control.type;
   }
 
   public get getVersion(): string {

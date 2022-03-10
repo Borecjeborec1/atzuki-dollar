@@ -32,8 +32,8 @@ export function sort(obj: number[] | string[]): number[] | string[] {
 /**
  * Sort given object by their keys.
  */
-export function sortByKey(object: any): any {
-  return Object.keys(object).sort().reduce((r: any, k: string) => (r[k] = object[k], r), {})
+export function sortByKey<T>(object: T): T {
+  return Object.keys(object).sort().reduce((r: any, k: string) => (r[k] = object[k as keyof T], r), {})
 }
 
 /**
@@ -43,10 +43,23 @@ export function sortByValue(object: any): any {
   return Object.keys(object).sort((a, b) => object[a] - object[b]).reduce((r: any, k: string) => (r[k] = object[k], r), {})
 }
 
-export function shuffle(array: any[]): any[] {
+/**
+ * Shuffle the given array.
+ */
+
+export function shuffle<T>(array: T[]): T[] {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [array[i], array[j]] = [array[j], array[i]];
   }
   return array;
+}
+
+/**
+ * Loop for each element.
+ */
+export function forEach(array: any[], cb: (element: any, index?: number) => void): void {
+  for (let i = 0; i < array.length; i++) {
+    cb(array[i], i);
+  }
 }

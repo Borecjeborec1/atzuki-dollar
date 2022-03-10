@@ -6,9 +6,9 @@ import * as control from "./lib/control.js"
 
 /**
  * @author <a href="WebsiteLink">Borecjeborec1</a>
- * @see <a href="GithubLink">Github</a>
+ * @see <a href="https://github.com/Borecjeborec1/atzuki-dollar">Github</a>
  * @license MIT
- * @version 1.0.0
+ * @version 1.0.6
  */
 class AtzukiDollar {
   // Constants 

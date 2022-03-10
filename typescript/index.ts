@@ -1,7 +1,7 @@
 /**
  * Generate a random number between min and max
  */
-function randInt(min: number, max: number): number {
+function randInt(min: number, max?: number): number {
   if (!max) return Math.floor(Math.random() * min);
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -65,8 +65,8 @@ function sort(obj: number[] | string[]): number[] | string[] {
 /**
  * Sort given object by their keys.
  */
-function sortByKey(object: any): any {
-  return Object.keys(object).sort().reduce((r: any, k: string) => (r[k] = object[k], r), {})
+function sortByKey<T>(object: T): T {
+  return Object.keys(object).sort().reduce((r: any, k: string) => (r[k] = object[k as keyof T], r), {})
 }
 
 /**
@@ -76,12 +76,25 @@ function sortByValue(object: any): any {
   return Object.keys(object).sort((a, b) => object[a] - object[b]).reduce((r: any, k: string) => (r[k] = object[k], r), {})
 }
 
-function shuffle(array: any[]): any[] {
+/**
+ * Shuffle the given array.
+ */
+
+function shuffle<T>(array: T[]): T[] {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [array[i], array[j]] = [array[j], array[i]];
   }
   return array;
+}
+
+/**
+ * Loop for each element.
+ */
+function forEach(array: any[], cb: (element: any, index?: number) => void): void {
+  for (let i = 0; i < array.length; i++) {
+    cb(array[i], i);
+  }
 }
 /**
   * Replace all occurrences of a string.
@@ -93,9 +106,9 @@ function replaceAll(string: string, search: string, replace: string): string {
 /**
   * Create a for loop.
   */
-function loop(amount: number = 10, callback: Function): void {
+function loop<T>(amount: number, cb: (i: number) => T): void {
   for (let i = 0; i < amount; i++) {
-    callback(i);
+    cb(i);
   }
 }
 
@@ -116,9 +129,9 @@ function type(value: any): string {
 
 /**
  * @author <a href="WebsiteLink">Borecjeborec1</a>
- * @see <a href="GithubLink">Github</a>
+ * @see <a href="https://github.com/Borecjeborec1/atzuki-dollar">Github</a>
  * @license MIT
- * @version 1.0.0
+ * @version 1.0.6
  */
 class AtzukiDollar {
   // Constants 

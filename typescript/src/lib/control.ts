@@ -1,9 +1,9 @@
 /**
   * Create a for loop.
   */
-export function loop(amount: number = 10, callback: Function): void {
+export function loop<T>(amount: number, cb: (i: number) => T): void {
   for (let i = 0; i < amount; i++) {
-    callback(i);
+    cb(i);
   }
 }
 

@@ -2,6 +2,7 @@ import * as math from './lib/math.js';
 import * as objects from './lib/objects.js';
 import * as strings from './lib/strings.js';
 import * as control from "./lib/control.js"
+import * as doms from "./lib/doms.js"
 
 
 /**
@@ -13,6 +14,10 @@ import * as control from "./lib/control.js"
 class AtzukiDollar {
   // Constants 
   private readonly version: string;
+
+  // DOM Functions
+  public id: Function;
+  public selector: Function;
 
   // Math Functions
   public randInt: Function;
@@ -41,6 +46,10 @@ class AtzukiDollar {
   constructor() {
     // Constants 
     this.version = "1.0.0";
+
+    // DOM Functions
+    this.id = doms.id;
+    this.selector = doms.selector;
 
     // Math Functions
     this.randInt = math.randInt;

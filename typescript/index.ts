@@ -125,6 +125,19 @@ function log(...args: any[]): void {
 function type(value: any): string {
   return Object.prototype.toString.call(value).slice(8, -1);
 }
+/**
+ * document.getElementById wrapper
+ */
+function id(id: string): HTMLElement | null {
+  return document.getElementById(id);
+}
+
+/**
+ * document.querySelector wrapper
+ */
+function selector(name: string): HTMLElement | null {
+  return document.querySelector(name);
+}
 
 
 /**
@@ -136,6 +149,10 @@ function type(value: any): string {
 class AtzukiDollar {
   // Constants 
   private readonly version: string;
+
+  // DOM Functions
+  public id: Function;
+  public selector: Function;
 
   // Math Functions
   public randInt: Function;
@@ -164,6 +181,10 @@ class AtzukiDollar {
   constructor() {
     // Constants 
     this.version = "1.0.0";
+
+    // DOM Functions
+    this.id = id;
+    this.selector = selector;
 
     // Math Functions
     this.randInt = randInt;

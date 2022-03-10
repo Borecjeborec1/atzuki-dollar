@@ -3,6 +3,7 @@
   "version": "1.0.7",
   "description": "Personal JavaScript utility library",
   "main": "./javascript/index.js",
+  "types": "javascript/index.d.ts",
   "scripts": {
     "ts": "tsc",
     "min": "node ./build/compact.js",

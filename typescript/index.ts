@@ -93,10 +93,17 @@ function replaceAll(string: string, search: string, replace: string): string {
 /**
   * Create a for loop.
   */
-function loop(amount: number, callback: Function): void {
+function loop(amount: number = 10, callback: Function): void {
   for (let i = 0; i < amount; i++) {
     callback(i);
   }
+}
+
+/**
+ * Console.log() shortcut.
+ */
+function log(...args: any[]): void {
+  console.log(...args);
 }
 
 
@@ -128,6 +135,7 @@ class AtzukiDollar {
 
   // Control Functions
   public loop: Function;
+  public log: Function;
 
   constructor() {
     // Constants 
@@ -151,6 +159,7 @@ class AtzukiDollar {
 
     // Control Functions
     this.loop = loop;
+    this.log = log;
   }
 
   public get getVersion(): string {

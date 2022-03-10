@@ -146,9 +146,12 @@ class AtzukiDollar {
 
   // Objects Functions
   public flatten: Function;
+  public sort: Function;
   public sortByKey: Function;
   public sortByValue: Function;
   public shuffle: Function;
+  public forEach: Function;
+
 
   // Strings Functions
   public replaceAll: Function;
@@ -171,9 +174,11 @@ class AtzukiDollar {
 
     // Objects Functions
     this.flatten = flatten;
+    this.sort = sort;
     this.sortByKey = sortByKey;
     this.sortByValue = sortByValue;
     this.shuffle = shuffle;
+    this.forEach = forEach;
 
     // Strings Functions
     this.replaceAll = replaceAll;

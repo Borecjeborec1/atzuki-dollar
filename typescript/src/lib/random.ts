@@ -11,3 +11,27 @@ export function randInt(min: number, max?: number): number {
 export function randBool(): boolean {
   return Math.random() >= 0.5;
 }
+
+/**
+ * Generate random password
+ */
+export function randPassword(length: number = 10): string {
+  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  let password = '';
+  for (let i = 0; i < length; i++) {
+    password += chars.charAt(Math.floor(Math.random() * chars.length));
+  }
+  return password;
+}
+
+/**
+ * Generate random string
+ */
+export function randString(length: number = 10): string {
+  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+  let string = '';
+  for (let i = 0; i < length; i++) {
+    string += chars.charAt(Math.floor(Math.random() * chars.length));
+  }
+  return string;
+}

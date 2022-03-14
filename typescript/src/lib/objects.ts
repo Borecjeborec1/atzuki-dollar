@@ -58,7 +58,7 @@ export function shuffle<T>(array: T[]): T[] {
 /**
  * Loop for each element.
  */
-export function forEach(array: any[], cb: (element: any, index?: number) => void): void {
+export function each(array: any[], cb: (element: any, index?: number) => void): void {
   for (let i = 0; i < array.length; i++) {
     cb(array[i], i);
   }

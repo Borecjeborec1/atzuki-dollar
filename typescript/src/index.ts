@@ -18,11 +18,14 @@ class AtzukiDollar {
 
   // DOM Functions
   public id: Function;
-  public selector: Function;
+  public el: Function;
+  public text: Function;
 
   // Random Functions
   public randInt: Function;
   public randBool: Function;
+  public randPassword: Function;
+  public randString: Function;
 
   // Math Functions
   public max: Function;
@@ -38,7 +41,7 @@ class AtzukiDollar {
   public sortByKey: Function;
   public sortByValue: Function;
   public shuffle: Function;
-  public forEach: Function;
+  public each: Function;
 
 
   // Strings Functions
@@ -51,15 +54,18 @@ class AtzukiDollar {
 
   constructor() {
     // Constants 
-    this.version = '1.0.8';
+this.version = '1.0.8';
 
     // DOM Functions
     this.id = _dom.id;
-    this.selector = _dom.selector;
+    this.el = _dom.el;
+    this.text = _dom.text;
 
     // Random Functions
     this.randInt = _random.randInt;
     this.randBool = _random.randBool;
+    this.randPassword = _random.randPassword;
+    this.randString = _random.randString;
 
     // Math Functions
     this.max = _math.max;
@@ -75,7 +81,7 @@ class AtzukiDollar {
     this.sortByKey = _objects.sortByKey;
     this.sortByValue = _objects.sortByValue;
     this.shuffle = _objects.shuffle;
-    this.forEach = _objects.forEach;
+    this.each = _objects.each;
 
     // Strings Functions
     this.replaceAll = _strings.replaceAll;

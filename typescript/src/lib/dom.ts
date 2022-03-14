@@ -8,6 +8,13 @@ export function id(id: string): HTMLElement | null {
 /**
  * document.querySelector wrapper
  */
-export function selector(name: string): HTMLElement | null {
+export function el(name: string): HTMLElement | null {
   return document.querySelector(name);
+}
+
+/**
+ * InnerText of the given element
+  */
+export function text(el: HTMLElement): string {
+  return el.innerText;
 }

@@ -9,7 +9,7 @@ for (let i = 0; i < lines.length; i++) {
   if (lines[i].startsWith('import ')) {
     let importName = lines[i].match("as .+ from")[0].replace("as ", "").replace(" from", ".ts")
     importNames.push(importName)
-    let data = fs.readFileSync(path.join(__dirname, '../typescript/src/lib/' + importName), 'utf8')
+    let data = fs.readFileSync(path.join(__dirname, '../typescript/src/lib/' + importName.substring(1)), 'utf8')
     data = data.replace(/export /g, "")
     lines[i] = data;
   }

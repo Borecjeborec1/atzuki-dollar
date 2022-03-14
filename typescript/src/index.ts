@@ -1,8 +1,9 @@
-import * as math from './lib/math.js';
-import * as objects from './lib/objects.js';
-import * as strings from './lib/strings.js';
-import * as control from "./lib/control.js"
-import * as doms from "./lib/doms.js"
+import * as _math from './lib/math.js';
+import * as _random from './lib/random.js';
+import * as _objects from './lib/objects.js';
+import * as _strings from './lib/strings.js';
+import * as _control from "./lib/control.js"
+import * as _dom from "./lib/dom.js"
 
 
 /**
@@ -19,12 +20,17 @@ class AtzukiDollar {
   public id: Function;
   public selector: Function;
 
-  // Math Functions
+  // Random Functions
   public randInt: Function;
   public randBool: Function;
+
+  // Math Functions
   public max: Function;
   public min: Function;
   public isEqual: Function;
+  public isPrime: Function;
+  public greatestCommonDivisor: Function;
+  public leastCommonMultiple: Function;
 
   // Objects Functions
   public flatten: Function;
@@ -45,34 +51,39 @@ class AtzukiDollar {
 
   constructor() {
     // Constants 
-    this.version = "1.0.0";
+    this.version = '1.0.8';
 
     // DOM Functions
-    this.id = doms.id;
-    this.selector = doms.selector;
+    this.id = _dom.id;
+    this.selector = _dom.selector;
+
+    // Random Functions
+    this.randInt = _random.randInt;
+    this.randBool = _random.randBool;
 
     // Math Functions
-    this.randInt = math.randInt;
-    this.randBool = math.randBool;
-    this.max = math.max;
-    this.min = math.min;
-    this.isEqual = math.isEqual;
+    this.max = _math.max;
+    this.min = _math.min;
+    this.isEqual = _math.isEqual;
+    this.isPrime = _math.isPrime;
+    this.greatestCommonDivisor = _math.greatestCommonDivisor;
+    this.leastCommonMultiple = _math.leastCommonMultiple;
 
     // Objects Functions
-    this.flatten = objects.flatten;
-    this.sort = objects.sort;
-    this.sortByKey = objects.sortByKey;
-    this.sortByValue = objects.sortByValue;
-    this.shuffle = objects.shuffle;
-    this.forEach = objects.forEach;
+    this.flatten = _objects.flatten;
+    this.sort = _objects.sort;
+    this.sortByKey = _objects.sortByKey;
+    this.sortByValue = _objects.sortByValue;
+    this.shuffle = _objects.shuffle;
+    this.forEach = _objects.forEach;
 
     // Strings Functions
-    this.replaceAll = strings.replaceAll;
+    this.replaceAll = _strings.replaceAll;
 
     // Control Functions
-    this.loop = control.loop;
-    this.log = control.log;
-    this.type = control.type;
+    this.loop = _control.loop;
+    this.log = _control.log;
+    this.type = _control.type;
   }
 
   public get getVersion(): string {

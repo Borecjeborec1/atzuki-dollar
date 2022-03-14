@@ -1,18 +1,4 @@
 /**
- * Generate a random number between min and max
- */
-function randInt(min: number, max?: number): number {
-  if (!max) return Math.floor(Math.random() * min);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-/**
- * Get random boolean, true or false
- */
-function randBool(): boolean {
-  return Math.random() >= 0.5;
-}
-
-/**
   * Get the greater of values.
   */
 function max(...args: number[]): number {
@@ -29,6 +15,25 @@ function min(...args: number[]): number {
  */
 function isEqual(a: number, b: number): boolean {
   return a === b;
+}
+
+function isPrime(n: number): boolean {
+  for (let i = 2; i <= Math.sqrt(n); i++)
+    if (n % i === 0) return false;
+  return n > 1;
+}
+/**
+ * Generate a random number between min and max
+ */
+function randInt(min: number, max?: number): number {
+  if (!max) return Math.floor(Math.random() * min);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+/**
+ * Get random boolean, true or false
+ */
+function randBool(): boolean {
+  return Math.random() >= 0.5;
 }
 
 /**
@@ -154,12 +159,15 @@ class AtzukiDollar {
   public id: Function;
   public selector: Function;
 
-  // Math Functions
+  // Random Functions
   public randInt: Function;
   public randBool: Function;
+
+  // Math Functions
   public max: Function;
   public min: Function;
   public isEqual: Function;
+  public isPrime: Function;
 
   // Objects Functions
   public flatten: Function;
@@ -180,18 +188,21 @@ class AtzukiDollar {
 
   constructor() {
     // Constants 
-    this.version = "1.0.0";
+    this.version = '1.0.8';
 
     // DOM Functions
     this.id = id;
     this.selector = selector;
 
-    // Math Functions
+    // Random Functions
     this.randInt = randInt;
     this.randBool = randBool;
+
+    // Math Functions
     this.max = max;
     this.min = min;
     this.isEqual = isEqual;
+    this.isPrime = isPrime;
 
     // Objects Functions
     this.flatten = flatten;

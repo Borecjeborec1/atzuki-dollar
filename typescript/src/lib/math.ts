@@ -1,18 +1,4 @@
 /**
- * Generate a random number between min and max
- */
-export function randInt(min: number, max?: number): number {
-  if (!max) return Math.floor(Math.random() * min);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-/**
- * Get random boolean, true or false
- */
-export function randBool(): boolean {
-  return Math.random() >= 0.5;
-}
-
-/**
   * Get the greater of values.
   */
 export function max(...args: number[]): number {
@@ -29,4 +15,28 @@ export function min(...args: number[]): number {
  */
 export function isEqual(a: number, b: number): boolean {
   return a === b;
+}
+
+/**
+ * Check if number is prime.
+ */
+export function isPrime(n: number): boolean {
+  for (let i = 2; i <= Math.sqrt(n); i++)
+    if (n % i === 0) return false;
+  return n > 1;
+}
+
+/**
+ * Find the greatest common divisor of two numbers.
+ */
+export function greatestCommonDivisor(a: number, b: number): number {
+  if (b === 0) return a;
+  return greatestCommonDivisor(b, a % b);
+}
+
+/**
+ * Find the least common multiple of two numbers.
+ */
+export function leastCommonMultiple(a: number, b: number): number {
+  return (a * b) / greatestCommonDivisor(a, b);
 }

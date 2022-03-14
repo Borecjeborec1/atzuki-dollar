@@ -46,6 +46,14 @@ class AtzukiDollar {
 
   // Strings Functions
   public replaceAll: Function;
+  public camelCase: Function;
+  public kebabCase: Function;
+  public snakeCase: Function;
+  public pascalCase: Function;
+  public sentenceCase: Function;
+  public titleCase: Function;
+  public upperCase: Function;
+  public lowerCase: Function;
 
   // Control Functions
   public loop: Function;
@@ -54,7 +62,7 @@ class AtzukiDollar {
 
   constructor() {
     // Constants 
-this.version = '1.0.8';
+this.version = '1.0.10';
 
     // DOM Functions
     this.id = _dom.id;
@@ -85,6 +93,15 @@ this.version = '1.0.8';
 
     // Strings Functions
     this.replaceAll = _strings.replaceAll;
+    this.camelCase = _strings.camelCase;
+    this.kebabCase = _strings.kebabCase;
+    this.snakeCase = _strings.snakeCase;
+    this.pascalCase = _strings.pascalCase;
+    this.sentenceCase = _strings.sentenceCase;
+    this.titleCase = _strings.titleCase;
+    this.upperCase = _strings.upperCase;
+    this.lowerCase = _strings.lowerCase;
+
 
     // Control Functions
     this.loop = _control.loop;

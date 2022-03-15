@@ -21,9 +21,9 @@ export function isEqual(a: number, b: number): boolean {
  * Check if number is prime.
  */
 export function isPrime(n: number): boolean {
-  for (let i = 2; i <= Math.sqrt(n); i++)
+  for (let i = 3; i <= Math.sqrt(n); i += 2)
     if (n % i === 0) return false;
-  return n > 1;
+  return n % 2 != 0 && n > 1 || n == 2;
 }
 
 /**

@@ -40,3 +40,44 @@ export function greatestCommonDivisor(a: number, b: number): number {
 export function leastCommonMultiple(a: number, b: number): number {
   return (a * b) / greatestCommonDivisor(a, b);
 }
+
+/**
+ * Check if Numbers is palindrome.
+ */
+export function isPalindrome(n: number): boolean {
+  return n.toString() === n.toString().split('').reverse().join('');
+}
+
+/**
+ * Check if Numbers is even.
+ */
+export function isEven(n: number): boolean {
+  return n % 2 === 0;
+}
+
+/**
+ * Check if Numbers is odd.
+ */
+export function isOdd(n: number): boolean {
+  return n % 2 !== 0;
+}
+
+/**
+ * Returns all divisors of a number.
+ */
+export function divisors(n: number): number[] {
+  let divisors = [];
+  for (let i = 1; i * i <= n; i++)
+    if (n % i === 0) {
+      divisors.push(i);
+      if (i !== n / i) divisors.push(n / i);
+    }
+  return divisors;
+}
+
+/**
+ * Return a number representing the given base taken to the power of the given exponent.
+ */
+export function pow(base: number, exponent: number): number {
+  return Math.pow(base, exponent);
+}

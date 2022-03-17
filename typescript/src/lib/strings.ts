@@ -66,3 +66,10 @@ export function upperCase(string: string): string {
 export function lowerCase(string: string): string {
   return string.toLowerCase();
 }
+
+/**
+ * Reverse string.
+ */
+export function reverse(string: string): string {
+  return string.split('').reverse().join('');
+}

@@ -13,30 +13,37 @@ import * as _dom from "./lib/dom.js"
  * @version 1.0.6
  */
 class AtzukiDollar {
+
   // Constants 
   private readonly version: string;
 
-  // DOM Functions
+  // DOM Function Definition
   public id: Function;
   public el: Function;
   public text: Function;
 
-  // Random Functions
+  // Random Function Definition
   public randInt: Function;
   public randFloat: Function;
   public randBool: Function;
   public randPassword: Function;
   public randString: Function;
 
-  // Math Functions
+  // Math Function Definition
+  public pow: Function;
+  public isPalindrome: Function;
   public max: Function;
   public min: Function;
   public isEqual: Function;
   public isPrime: Function;
   public greatestCommonDivisor: Function;
   public leastCommonMultiple: Function;
+  public isEven: Function;
+  public isOdd: Function;
+  public divisors: Function;
 
-  // Objects Functions
+
+  // Objects Function Definition
   public flatten: Function;
   public sort: Function;
   public sortByKey: Function;
@@ -45,7 +52,7 @@ class AtzukiDollar {
   public each: Function;
 
 
-  // Strings Functions
+  // Strings Function Definition
   public replaceAll: Function;
   public camelCase: Function;
   public kebabCase: Function;
@@ -55,15 +62,16 @@ class AtzukiDollar {
   public titleCase: Function;
   public upperCase: Function;
   public lowerCase: Function;
+  public reverse: Function;
 
-  // Control Functions
+  // Control Function Definition
   public loop: Function;
   public log: Function;
   public type: Function;
 
   constructor() {
     // Constants 
-this.version = '1.0.12';
+this.version = '1.0.13';
 
     // DOM Functions
     this.id = _dom.id;
@@ -79,11 +87,16 @@ this.version = '1.0.12';
 
     // Math Functions
     this.max = _math.max;
+    this.pow = _math.pow
+    this.isPalindrome = _math.isPalindrome
     this.min = _math.min;
     this.isEqual = _math.isEqual;
     this.isPrime = _math.isPrime;
     this.greatestCommonDivisor = _math.greatestCommonDivisor;
     this.leastCommonMultiple = _math.leastCommonMultiple;
+    this.isEven = _math.isEven;
+    this.isOdd = _math.isOdd;
+    this.divisors = _math.divisors;
 
     // Objects Functions
     this.flatten = _objects.flatten;
@@ -103,6 +116,7 @@ this.version = '1.0.12';
     this.titleCase = _strings.titleCase;
     this.upperCase = _strings.upperCase;
     this.lowerCase = _strings.lowerCase;
+    this.reverse = _strings.reverse;
 
 
     // Control Functions

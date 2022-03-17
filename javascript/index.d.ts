@@ -4,6 +4,7 @@ declare function isEqual(a: number, b: number): boolean;
 declare function isPrime(n: number): boolean;
 declare function greatestCommonDivisor(a: number, b: number): number;
 declare function leastCommonMultiple(a: number, b: number): number;
+declare function randFloat(min: number, max: number): number;
 declare function randInt(min: number, max?: number): number;
 declare function randBool(): boolean;
 declare function randPassword(length?: number): string;
@@ -35,6 +36,7 @@ declare class AtzukiDollar {
     el: Function;
     text: Function;
     randInt: Function;
+    randFloat: Function;
     randBool: Function;
     randPassword: Function;
     randString: Function;

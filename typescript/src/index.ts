@@ -23,6 +23,7 @@ class AtzukiDollar {
 
   // Random Functions
   public randInt: Function;
+  public randFloat: Function;
   public randBool: Function;
   public randPassword: Function;
   public randString: Function;
@@ -62,7 +63,7 @@ class AtzukiDollar {
 
   constructor() {
     // Constants 
-this.version = '1.0.10';
+this.version = '1.0.11';
 
     // DOM Functions
     this.id = _dom.id;
@@ -71,6 +72,7 @@ this.version = '1.0.10';
 
     // Random Functions
     this.randInt = _random.randInt;
+    this.randFloat = _random.randFloat;
     this.randBool = _random.randBool;
     this.randPassword = _random.randPassword;
     this.randString = _random.randString;

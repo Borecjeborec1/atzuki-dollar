@@ -63,7 +63,7 @@ class AtzukiDollar {
 
   constructor() {
     // Constants 
-this.version = '1.0.11';
+this.version = '1.0.12';
 
     // DOM Functions
     this.id = _dom.id;

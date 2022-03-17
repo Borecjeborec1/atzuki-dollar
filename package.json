@@ -1,6 +1,6 @@
 {
   "name": "atzuki_dollar",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Personal JavaScript utility library",
   "main": "./javascript/index.js",
   "types": "javascript/index.d.ts",

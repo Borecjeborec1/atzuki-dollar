@@ -2,7 +2,8 @@
  * Generate a random floating point number between the given interval. 
  */
 export function randFloat(min: number, max: number): number {
-  return Math.random() * (max - min) + min;
+  if (!max) return Math.random() * min;
+  return Math.random() * (max - min + 1) + min;
 }
 
 

@@ -1,4 +1,12 @@
 /**
+ * Generate a random floating point number between the given interval. 
+ */
+export function randFloat(min: number, max: number): number {
+  return Math.random() * (max - min) + min;
+}
+
+
+/**
  * Generate a random number between min and max
  */
 export function randInt(min: number, max?: number): number {

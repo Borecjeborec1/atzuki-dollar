@@ -30,6 +30,9 @@ class AtzukiDollar {
   public randString: Function;
 
   // Math Function Definition
+  public isDivisibleBy: Function;
+  public fibonacci: Function;
+  public factorial: Function;
   public pow: Function;
   public isPalindrome: Function;
   public max: Function;
@@ -71,7 +74,7 @@ class AtzukiDollar {
 
   constructor() {
     // Constants 
-this.version = '1.0.13';
+this.version = '1.0.14';
 
     // DOM Functions
     this.id = _dom.id;
@@ -87,6 +90,9 @@ this.version = '1.0.13';
 
     // Math Functions
     this.max = _math.max;
+    this.isDivisibleBy = _math.isDivisibleBy
+    this.fibonacci = _math.fibonacci
+    this.factorial = _math.factorial
     this.pow = _math.pow
     this.isPalindrome = _math.isPalindrome
     this.min = _math.min;

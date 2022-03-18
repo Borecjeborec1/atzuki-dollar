@@ -81,3 +81,24 @@ export function divisors(n: number): number[] {
 export function pow(base: number, exponent: number): number {
   return Math.pow(base, exponent);
 }
+
+/** 
+ * Return the factorial of the given number.
+*/
+export function factorial(n: number): number {
+  return n <= 1 ? 1 : n * factorial(n - 1);
+}
+
+/**
+ * Return the fibonacci number of the given index.
+ */
+export function fibonacci(n: number): number {
+  return n <= 1 ? n : fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+/**
+ * Check if given numbers is divisible by another number.
+ */
+export function isDivisibleBy(n: number, by: number): boolean {
+  return n % by === 0;
+}

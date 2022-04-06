@@ -17,6 +17,7 @@ declare function randInt(min: number, max?: number): number;
 declare function randBool(): boolean;
 declare function randPassword(length?: number): string;
 declare function randString(length?: number): string;
+declare function randColor(): string;
 declare function flatten(obj: any): any;
 declare function sort(obj: number[] | string[]): number[] | string[];
 declare function sortByKey<T>(object: T): T;
@@ -44,6 +45,7 @@ declare class AtzukiDollar {
     id: Function;
     el: Function;
     text: Function;
+    randColor: Function;
     randInt: Function;
     randFloat: Function;
     randBool: Function;

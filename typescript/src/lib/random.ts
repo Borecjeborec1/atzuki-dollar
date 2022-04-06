@@ -44,3 +44,10 @@ export function randString(length: number = 10): string {
   }
   return string;
 }
+
+/*
+  * Generate random  color
+  */
+export function randColor(): string {
+  return '#' + Math.floor(Math.random() * 16777215).toString(16);
+}

@@ -31,6 +31,8 @@ class AtzukiDollar {
   public randString: Function;
 
   // Math Function Definition
+  public hex2rgb: Function;
+  public rgb2hex: Function;
   public isDivisibleBy: Function;
   public fibonacci: Function;
   public factorial: Function;
@@ -75,7 +77,7 @@ class AtzukiDollar {
 
   constructor() {
     // Constants 
-this.version = '1.0.18';
+this.version = '1.0.19';
 
     // DOM Functions
     this.id = _dom.id;
@@ -92,6 +94,8 @@ this.version = '1.0.18';
 
     // Math Functions
     this.max = _math.max;
+    this.hex2rgb = _math.hex2rgb
+    this.rgb2hex = _math.rgb2hex
     this.isDivisibleBy = _math.isDivisibleBy
     this.fibonacci = _math.fibonacci
     this.factorial = _math.factorial

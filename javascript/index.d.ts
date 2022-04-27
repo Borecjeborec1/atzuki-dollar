@@ -12,6 +12,8 @@ declare function pow(base: number, exponent: number): number;
 declare function factorial(n: number): number;
 declare function fibonacci(n: number): number;
 declare function isDivisibleBy(n: number, by: number): boolean;
+declare function rgb2hex(r: number, g: number, b: number): string;
+declare function hex2rgb(hex: string): [number, number, number] | null;
 declare function randFloat(min: number, max: number): number;
 declare function randInt(min: number, max?: number): number;
 declare function randBool(): boolean;
@@ -51,6 +53,8 @@ declare class AtzukiDollar {
     randBool: Function;
     randPassword: Function;
     randString: Function;
+    hex2rgb: Function;
+    rgb2hex: Function;
     isDivisibleBy: Function;
     fibonacci: Function;
     factorial: Function;

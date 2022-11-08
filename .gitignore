@@ -1,5 +1,5 @@
 node_modules/
-javascript/src/lib/index.d.ts
+javascript/src/index.d.ts
 javascript/*/*/*.js
 javascript/*/*.js
 javascript/*.js

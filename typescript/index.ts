@@ -1,13 +1,12 @@
 /**
- * 
- * THIS FILE IS BUILT AUTOMATICLY.
- * 
- * DO NOT EDIT CONTENT IN THIS FILE!
- * 
- * EVERY AUTOMATION IS DONE INSIDE build/compact.js
- * 
- */
-
+* 
+* THIS FILE IS BEING BUILT AUTOMATICLY.
+* 
+* DO NOT EDIT CONTENT IN THIS FILE!
+* 
+* EVERY AUTOMATION PROCESS IS DONE INSIDE build/compact.js
+* 
+*/
 
 /**
   * Get the greater of values.
@@ -446,7 +445,7 @@ class AtzukiDollar {
 
   constructor() {
     // Constants 
-    this.version = '1.0.21';
+this.version = '1.0.22';
 
     // DOM Functions
     this.id = id;

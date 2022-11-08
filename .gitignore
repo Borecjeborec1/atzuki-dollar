@@ -1,5 +1,7 @@
 node_modules/
-javascript/src/
-javascript/index.js
+javascript/src/lib/index.d.ts
+javascript/*/*/*.js
+javascript/*/*.js
+javascript/*.js
 docs/
 typescript/index.ts

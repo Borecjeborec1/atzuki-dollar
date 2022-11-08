@@ -1,0 +1,10 @@
+export declare function replaceAll(string: string, search: string, replace: string): string;
+export declare function camelCase(string: string): string;
+export declare function kebabCase(string: string): string;
+export declare function snakeCase(string: string): string;
+export declare function pascalCase(string: string): string;
+export declare function sentenceCase(string: string): string;
+export declare function titleCase(string: string): string;
+export declare function upperCase(string: string): string;
+export declare function lowerCase(string: string): string;
+export declare function reverse(string: string): string;

@@ -1,0 +1,16 @@
+export declare function max(...args: number[]): number;
+export declare function min(...args: number[]): number;
+export declare function isEqual(a: number, b: number): boolean;
+export declare function isPrime(n: number): boolean;
+export declare function greatestCommonDivisor(a: number, b: number): number;
+export declare function leastCommonMultiple(a: number, b: number): number;
+export declare function isPalindrome(n: number): boolean;
+export declare function isEven(n: number): boolean;
+export declare function isOdd(n: number): boolean;
+export declare function divisors(n: number): number[];
+export declare function pow(base: number, exponent: number): number;
+export declare function factorial(n: number): number;
+export declare function fibonacci(n: number): number;
+export declare function isDivisibleBy(n: number, by: number): boolean;
+export declare function rgb2hex(r: number, g: number, b: number): string;
+export declare function hex2rgb(hex: string): [number, number, number] | null;

@@ -26,6 +26,7 @@ declare function sortByKey<T>(object: T): T;
 declare function sortByValue(object: any): any;
 declare function shuffle<T>(array: T[]): T[];
 declare function each(array: any[], cb: (element: any, index?: number) => void): void;
+declare function removeDuplicates(array: any[]): any[];
 declare function replaceAll(string: string, search: string, replace: string): string;
 declare function camelCase(string: string): string;
 declare function kebabCase(string: string): string;
@@ -69,6 +70,7 @@ declare class AtzukiDollar {
     isEven: Function;
     isOdd: Function;
     divisors: Function;
+    removeDuplicates: Function;
     flatten: Function;
     sort: Function;
     sortByKey: Function;

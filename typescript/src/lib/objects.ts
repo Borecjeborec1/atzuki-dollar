@@ -63,3 +63,10 @@ export function each(array: any[], cb: (element: any, index?: number) => void): 
     cb(array[i], i);
   }
 }
+
+/**
+ * Remove duplicates from array
+ */
+export function removeDuplicates(array: any[]): any[] {
+  return [...(new Set([...array]))]
+}

@@ -1,18 +1,17 @@
 {
   "name": "atzuki_dollar",
-  "version": "1.0.19",
+  "version": "1.0.21",
   "description": "Personal JavaScript utility library",
   "main": "./javascript/index.js",
   "types": "javascript/index.d.ts",
   "scripts": {
     "ts": "tsc",
-    "min": "node ./build/compact.js",
     "version": "node ./build/version.js",
+    "min": "node ./build/compact.js",
     "class": "node ./build/class.js",
     "dev": "tsc -w",
     "docs": "npx typedoc --out ../docs ./typescript/index.ts",
-    "build": "npm run version && npm run class && npm run min && npm run ts",
-    "build:all": "npm run version && npm run min && npm run ts && npm run docs"
+    "build": "npm run version && npm run class && npm run min && npm run ts"
   },
   "author": "borecjeborec1",
   "license": "MIT",

@@ -50,6 +50,7 @@ class AtzukiDollar {
 
 
   // Objects Function Definition
+  public removeDuplicates: Function;
   public flatten: Function;
   public sort: Function;
   public sortByKey: Function;
@@ -77,7 +78,7 @@ class AtzukiDollar {
 
   constructor() {
     // Constants 
-this.version = '1.0.19';
+this.version = '1.0.21';
 
     // DOM Functions
     this.id = _dom.id;
@@ -112,6 +113,7 @@ this.version = '1.0.19';
 
     // Objects Functions
     this.flatten = _objects.flatten;
+    this.removeDuplicates = _objects.removeDuplicates
     this.sort = _objects.sort;
     this.sortByKey = _objects.sortByKey;
     this.sortByValue = _objects.sortByValue;

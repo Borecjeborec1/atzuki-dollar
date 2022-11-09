@@ -332,10 +332,12 @@ function reverse(string: string): string {
 /**
   * Create a for loop.
   */
-function loop<T>(amount: number, cb: (i: number) => T): void {
-  for (let i = 0; i < amount; i++) {
+function loop<T>(amount: number, cb: (i: number) => T, startValue: number = 0, ignoredValues: number[] = []): void {
+  for (let i = startValue; i < amount + startValue; i++) {
+    if (ignoredValues.includes(i)) continue;
     cb(i);
   }
+
 }
 
 /**
@@ -445,7 +447,7 @@ class AtzukiDollar {
 
   constructor() {
     // Constants 
-this.version = '1.0.22';
+this.version = '1.0.23';
 
     // DOM Functions
     this.id = id;

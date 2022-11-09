@@ -1,10 +1,12 @@
 /**
   * Create a for loop.
   */
-export function loop<T>(amount: number, cb: (i: number) => T): void {
-  for (let i = 0; i < amount; i++) {
+export function loop<T>(amount: number, cb: (i: number) => T, startValue: number = 0, ignoredValues: number[] = []): void {
+  for (let i = startValue; i < amount + startValue; i++) {
+    if (ignoredValues.includes(i)) continue;
     cb(i);
   }
+
 }
 
 /**

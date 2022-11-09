@@ -37,7 +37,7 @@ declare function titleCase(string: string): string;
 declare function upperCase(string: string): string;
 declare function lowerCase(string: string): string;
 declare function reverse(string: string): string;
-declare function loop<T>(amount: number, cb: (i: number) => T): void;
+declare function loop<T>(amount: number, cb: (i: number) => T, startValue?: number, ignoredValues?: number[]): void;
 declare function log(...args: any[]): void;
 declare function type(value: any): string;
 declare function id(id: string): HTMLElement | null;
